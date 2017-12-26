@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Show itens</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" [routerLink]="['/dashboard']">Final Project</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#" [routerLink]="['/dashboard']">Home</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						Projects <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#" [routerLink]="['/dashboard']">Dashboard</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#" [routerLink]="['/calculator']">Calculator</a></li>
+						<li><a href="#" [routerLink]="['/converter']">Currency Converter</a></li>
+						<li><a href="#" [routerLink]="['/tasks']">Task Manager</a></li>
+						<li><a href="#" [routerLink]="['/tic-tac-toe']">Tic-tac-toe</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<router-outlet></router-outlet>
+</div>
